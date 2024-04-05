@@ -13,10 +13,13 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(PCL 1.10 REQUIRED)
 find_package(Eigen3 REQUIRED)
 
+catkin_package()
+
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
 )
+
 
 add_executable(${PROJECT_NAME}_node src/main.cpp)
 
